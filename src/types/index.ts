@@ -17,6 +17,7 @@ export interface Insight {
   source: string;
   title: string;
   likelihood: number;
+  swot?: string; // Added swot property
 }
 
 export interface FilterOptions {
