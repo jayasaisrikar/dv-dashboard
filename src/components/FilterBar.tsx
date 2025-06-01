@@ -280,7 +280,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
                   <span className="font-medium">{config.label}:</span>
                   <span className="text-gray-800 dark:text-gray-100">{activeValue}</span>
                   <button
-                    onClick={() => handleFilterChange(config.key, null)}
+                    onClick={() => handleFilterChange(config.key as keyof FilterState, null)}
                     className="ml-1 text-gray-400 dark:text-gray-500 hover:text-red-500 dark:hover:text-red-400 transition-colors"
                   >
                     <XMarkIcon className="w-3 h-3" />
@@ -359,7 +359,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
                   <div className="max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-600 scrollbar-track-transparent">
                     <button
                       onClick={() => {
-                        handleFilterChange(config.key, null);
+                        handleFilterChange(config.key as keyof FilterState, null);
                         setExpandedFilter(null);
                       }}
                       className={cn(
@@ -384,7 +384,7 @@ export default function FilterBar({ onFilterChange, activeFilters }: FilterBarPr
                         <button
                           key={option}
                           onClick={() => {
-                            handleFilterChange(config.key, option);
+                            handleFilterChange(config.key as keyof FilterState, option);
                             setExpandedFilter(null);
                           }}
                           className={cn(
