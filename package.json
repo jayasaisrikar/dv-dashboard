@@ -45,5 +45,10 @@
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@tremor/react": {
+      "react": "^18.0.0"
+    }
   }
 }
