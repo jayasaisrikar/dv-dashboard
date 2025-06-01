@@ -18,6 +18,7 @@ export interface Insight {
   title: string;
   likelihood: number;
   swot?: string; // Added swot property
+  city?: string; // Added city property
 }
 
 export interface FilterOptions {
