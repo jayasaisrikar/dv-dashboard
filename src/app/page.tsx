@@ -14,7 +14,6 @@ import LoadingOverlay from '@/components/LoadingOverlay';
 import { FilterState } from '@/types';
 import {
   ChartBarIcon,
-  ChartPieIcon,
   TableCellsIcon,
   PresentationChartLineIcon,
   DocumentChartBarIcon,

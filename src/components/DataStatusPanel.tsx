@@ -1,6 +1,7 @@
 import React from 'react';
 import LoadingSpinner from './LoadingSpinner';
 import ErrorMessage from './ErrorMessage';
+import Link from 'next/link';
 
 interface DataStatusPanelProps {
   status: 'loading' | 'success' | 'error';
@@ -70,9 +71,9 @@ export default function DataStatusPanel({ status, data, error }: DataStatusPanel
           <div className="mt-6 pt-6 border-t border-gray-200">
             <h3 className="text-lg font-medium text-gray-900">Next Steps</h3>
             <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1">
-              <li>Go to the <a href="/" className="text-blue-600 hover:text-blue-800">Dashboard</a> to start exploring your data</li>
-              <li>Check the <a href="/analytics" className="text-blue-600 hover:text-blue-800">Analytics</a> page for detailed insights</li>
-              <li>Use the <a href="/filters" className="text-blue-600 hover:text-blue-800">Filters</a> page to search through your data</li>
+              <li>Go to the <Link href="/" className="text-blue-600 hover:text-blue-800">Dashboard</Link> to start exploring your data</li>
+              <li>Check the <Link href="/analytics" className="text-blue-600 hover:text-blue-800">Analytics</Link> page for detailed insights</li>
+              <li>Use the <Link href="/filters" className="text-blue-600 hover:text-blue-800">Filters</Link> page to search through your data</li>
             </ul>
           </div>
         </div>
