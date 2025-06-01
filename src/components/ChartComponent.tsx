@@ -62,7 +62,7 @@ export default function ChartComponent({ chartType, dataType, filters, title }: 
     maintainAspectRatio: false,
     animation: {
       duration: 1500,
-      easing: 'easeOutQuart'
+      easing: 'easeOutQuart' as const
     },
     plugins: {
       legend: {
@@ -82,7 +82,7 @@ export default function ChartComponent({ chartType, dataType, filters, title }: 
         text: title,
         font: {
           size: 16,
-          weight: 'bold',
+          weight: 'bold' as const,
           family: "'Poppins', sans-serif"
         },
         color: '#374151',
@@ -98,7 +98,7 @@ export default function ChartComponent({ chartType, dataType, filters, title }: 
         padding: 12,
         titleFont: {
           family: "'Poppins', sans-serif",
-          weight: 'bold',
+          weight: 'bold' as const,
           size: 12
         },
         bodyFont: {
